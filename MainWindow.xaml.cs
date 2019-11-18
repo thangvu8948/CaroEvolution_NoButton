@@ -101,17 +101,8 @@ namespace CaroEvolution_NoButton
             //line4.Y2 = startY + 2 * height;
         }
 
-        private void Canvas_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            var position = e.GetPosition(this);
-            this.Title = $"{position.X} - {position.Y}";
-        }
 
-        private void Canvas_MouseMove(object sender, MouseEventArgs e)
-        {
-            var position = e.GetPosition(this);
-            this.Title = $"{position.X} - {position.Y}";
-        }
+
 
         private void Window_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
@@ -122,10 +113,7 @@ namespace CaroEvolution_NoButton
             //Dong
             int j = ((int)position.Y - startY) / width;
 
-            //        var (i, j) = button.Tag as Tuple<int, int>;
-
-            // MessageBox.Show($"Click on button {i} - {j}");
-
+            if (i >= Rows || j >= Cols) return;
             if (_a[i, j] == 0 && !gameOver)
             {
                 if (isXTurn)

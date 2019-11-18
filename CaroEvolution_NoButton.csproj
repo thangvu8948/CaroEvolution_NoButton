@@ -98,9 +98,5 @@
     <Resource Include="assets\circle.png" />
     <Resource Include="assets\cross.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="assets\blank.jpg" />
-    <Content Include="assets\blank.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

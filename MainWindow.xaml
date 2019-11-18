@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CaroEvolution_NoButton"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="Caro" Height="450" Width="800"
         Loaded="Window_Loaded"
         MouseLeftButtonUp="Window_MouseLeftButtonUp">
-    <Canvas Name="canvas" MouseLeftButtonUp="Canvas_MouseLeftButtonUp" MouseMove="Canvas_MouseMove">
+    <Canvas Name="canvas" >
         <Menu>
             <Button Content="New Game"  Click="NewGame_Click" Width="100" Height="30" FontSize="16"/>
             <Button Content="Save"  Click="Save_Click" Width="100" Height="30" FontSize="16"/>
